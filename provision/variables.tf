@@ -44,6 +44,7 @@ variable "gce" {
     size          = string
     type          = string
     auto_delete = bool
+    tier = string
   }))
   default = [
     {
@@ -58,6 +59,7 @@ variable "gce" {
         size = "30"
         type         = "pd-ssd"
         auto_delete  = true
+        tier = "STANDARD"
     }
   ]
 }

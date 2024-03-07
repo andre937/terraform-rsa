@@ -38,5 +38,6 @@ variable "gce" {
     size          = string
     type          = string
     auto_delete = bool
+    tier = string
   }))
 }

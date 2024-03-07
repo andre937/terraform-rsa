@@ -28,7 +28,7 @@ resource "google_compute_instance" "instance" {
     network            = data.google_compute_network.network.self_link
     subnetwork         = data.google_compute_subnetwork.subnetwork.self_link
     access_config {
-      // Ephemeral IP
+      network_tier = each.value.tier
     }
   }
   metadata = {
