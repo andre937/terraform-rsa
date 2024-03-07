@@ -1,6 +1,6 @@
 variable "project_id" {
     type = string
-    default = "root-414402"
+    default = "root"
 }
 
 variable "region" {
