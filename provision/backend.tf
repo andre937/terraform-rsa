@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
     bucket = "anwiku-gcp-iac"
-    prefix = "terraform/state/gke"
+    prefix = "terraform/state/gce"
   }
 }
